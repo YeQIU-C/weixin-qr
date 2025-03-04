@@ -3,35 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="网页描述">
-    <meta name="keywords" content="关键词">
-    <meta name="author" content="作者">
     <title>微信添加</title>
     <style>
         .container {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
-            min-height: 100vh;
             margin: 0;
+            padding: 10px;
+            box-sizing: border-box;
         }
         .qr-code {
-            max-width: 300px;
+            max-width: 200px;
             width: 100%;
             height: auto;
+            margin: 5px 0;
         }
         .wx-text {
-            font-size: 24px;
-            margin-bottom: 20px;
+            font-size: 20px;
+            margin: 5px 0;
             font-weight: bold;
+            background-color: #ff0000;
+            padding: 8px 16px;
+            border-radius: 5px;
+            color: white;
+        }
+        .description {
+            text-align: center;
+            font-size: 16px;
             color: #333;
+            max-width: 600px;
+            line-height: 1.3;
+            margin: 5px 0;
+        }
+        /* 图片样式 */
+        .image-container {
+            width: 90%;
+            max-width: 350px;
+            margin: 5px auto;
+        }
+        .product-image {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: contain;
+            margin-bottom: 5px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="wx-text">WX：QQ520DXD</div>
+        <div class="image-container">
+            <img src="img/5.png" alt="产品展示1" class="product-image">
+
+        </div>
+
+        <b>
+            <p class="description">
+                你好 咱这里是台州本地档口<br>
+                只做一比一还原版本 价格便宜 品质顶<br>
+                有机会可以认识一下<br>
+                上🚗截屏扫🐴找我
+            </p>
+        </b>
+
+        <div class="wx-text">W号：QQ520DXD</div>
         <img src="img/erweima.png" alt="微信二维码" class="qr-code">
     </div>
 </body>
